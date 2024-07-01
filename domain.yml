@@ -1,0 +1,72 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - about_luminar
+  - mission
+  - courses
+  - thankyou
+  - certification
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Luminar Technolab."
+
+  utter_about_luminar:
+  - text: "Luminar Technolab, No.1 Software Training Institute offers various Software Courses along 
+           with 100% Guaranteed Placement assistance. We provide Big Data Training, Data Science, 
+           Python,Mean Stack,Software Testing & many more"
+  utter_about_mission:
+  - text: "Our mission is to provide 100% placements to students those who enrol for our specialised courses. 
+       Our Placement assistance starts with Resume preparation, Mock Interviews by real working professionals, 
+       Aptitude test training & Interviews. We will provide unlimited placement assistance till the student
+      is placed satisfactorily."
+
+  utter_about_courses:
+  - text: "We are focused on providing advanced level software training like: \n-
+          1.Software Testing Training - Manual & Automation \n-
+          2.PYTHON DATA SCIENCE - ML - AI - & Power BI \n-
+          3.MEA(R)N Stack Web Development Expert - Angular & React \n-
+          4.Python Django - React - Full Stack Web Development Expert \n-
+          5.Asp.net MVC with Angular - Full Stack \n-
+          6.Flutter Training \n-
+          7.Java Spring Full Stack Development"
+
+  utter_about_thankyou:
+  - text: "You are Welcome."
+
+  utter_about_certification:
+  - text: "The Course is Certified by National Council for Technology & Training.
+          NACTET certificates have got high credibility among employers in India and abroad
+          especially in Middle East and other parts of the world. All certificates issued by
+          NACTET can be attested by Ministry of External affairs-Govt. of India and by the 
+          embassies of almost all countries."
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,56 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: about_institue
+  steps:
+  - intent: about_luminar
+  - action: utter_about_luminar
+
+- story: institue_mission
+  steps:
+  - intent: mission
+  - action: utter_about_mission
+
+- story: institute_courses
+  steps:
+  - intent: courses
+  - action: utter_about_courses
+
+- story: welcome
+  steps:
+  - intent: thankyou
+  - action: utter_about_thankyou
+
+- story: certificate
+  steps:
+  - intent: certification
+  - action: utter_about_certification
+  
